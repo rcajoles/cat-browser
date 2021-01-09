@@ -38,7 +38,7 @@
 
 			<b-row>
 				<template v-if="catList.length > 0">
-						<div class="col-md-3 col-sm-6 col-12" v-for="item in catList" :key="item.id">
+						<div class="col-md-3 col-sm-6 col-lg-3 col-3" v-for="item in catList" :key="item.id">
 							<b-card :img-src="item.url" img-alt="Image" img-top >
 								<b-button href="#" variant="primary" class="view-details" @click="viewCatDetail(item)" >View Details</b-button>
 							</b-card>
