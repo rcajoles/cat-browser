@@ -38,7 +38,7 @@
 
 			<b-row>
 				<template v-if="catList.length > 0">
-						<div class="col-md-3 col-sm-6 col-lg-3 col-3" v-for="item in catList" :key="item.id">
+						<div class="col-md-3 col-sm-6 col-12" v-for="item in catList" :key="item.id">
 							<b-card :img-src="item.url" img-alt="Image" img-top >
 								<b-button href="#" variant="primary" class="view-details" @click="viewCatDetail(item)" >View Details</b-button>
 							</b-card>
@@ -193,21 +193,6 @@ export default {
 
 
 <style>
-
-@media (min-width: 768px) {
-	.col-md-3 {
-		flex: 0 0 25%;
-		max-width: 25%;
-	}
-
-}
-
-@media (min-width: 576px){
-	.col-sm-6 {
-		flex: 0 0 50%;
-		max-width: 50%;
-	}
-}
 
 .view-details {
 	width: -webkit-fill-available;
